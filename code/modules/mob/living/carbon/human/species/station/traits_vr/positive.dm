@@ -75,6 +75,13 @@
 	var_changes = list("brute_mod" = 0.75)
 	excludes = list(/datum/trait/minor_burn_resist,/datum/trait/burn_resist)
 
+/datum/trait/brute_resist_plus
+	name = "Major Brute Resist"
+	desc = "Adds 35% resistance to brute damage sources."
+	cost = 4
+	var_changes = list("brute_mod" = 0.65)
+	excludes = list(/datum/trait/minor_burn_resist,/datum/trait/burn_resist)
+
 /datum/trait/minor_burn_resist
 	name = "Minor Burn Resist"
 	desc = "Adds 15% resistance to burn damage sources."
@@ -86,6 +93,13 @@
 	desc = "Adds 25% resistance to burn damage sources."
 	cost = 3
 	var_changes = list("burn_mod" = 0.75)
+	excludes = list(/datum/trait/minor_brute_resist,/datum/trait/brute_resist)
+
+/datum/trait/burn_resist_plus
+	name = "Burn Resist"
+	desc = "Adds 35% resistance to burn damage sources."
+	cost = 4
+	var_changes = list("burn_mod" = 0.65)
 	excludes = list(/datum/trait/minor_brute_resist,/datum/trait/brute_resist)
 
 /datum/trait/photoresistant

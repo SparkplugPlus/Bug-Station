@@ -13,13 +13,13 @@
 /datum/trait/weakling
 	name = "Weakling"
 	desc = "Causes heavy equipment to slow you down more when carried."
-	cost = -1
+	cost = -2
 	var_changes = list("item_slowdown_mod" = 1.5)
 
 /datum/trait/weakling_plus
 	name = "Major Weakling"
 	desc = "Allows you to carry heavy equipment with much more slowdown."
-	cost = -2
+	cost = -3
 	var_changes = list("item_slowdown_mod" = 2.0)
 
 /datum/trait/endurance_low
@@ -78,6 +78,12 @@
 	cost = -3
 	var_changes = list("burn_mod" = 1.5)
 
+/datum/trait/burn_weak_plus_plus
+	name = "Massive Burn Weakness"
+	desc = "Increases damage from burn damage sources by 75%"
+	cost = -4
+	var_changes = list("burn_mod" = 1.75)
+
 /datum/trait/conductive
 	name = "Conductive"
 	desc = "Increases your susceptibility to electric shocks by 50%"
@@ -99,7 +105,7 @@
 /datum/trait/hollow
 	name = "Hollow Bones/Aluminum Alloy"
 	desc = "Your bones and robot limbs are much easier to break."
-	cost = -2 //I feel like this should be higher, but let's see where it goes
+	cost = -3 //I feel like this should be higher, but let's see where it goes
 
 /datum/trait/hollow/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
